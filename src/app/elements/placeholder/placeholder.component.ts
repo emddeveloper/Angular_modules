@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-placeholder',
   templateUrl: './placeholder.component.html',
-  styleUrls: ['./placeholder.component.css']
+  styleUrls: ['./placeholder.component.css'],
 })
 export class PlaceholderComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  constructor() {}
+  @Input() header = true;
+  @Input() lines = 3;
+  ngOnInit(): void {}
 }
