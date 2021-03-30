@@ -1,0 +1,16 @@
+<app-divider heading="Reusable Table Component"></app-divider>
+
+<table class="ui celled table" [ngClass]="className">
+  <thead>
+    <tr>
+      <th *ngFor="let header of headers">{{ header.label }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of records">
+      <td data-label="Name" *ngFor="let header of headers">
+        {{ record[header.key] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
