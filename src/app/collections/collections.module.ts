@@ -8,9 +8,10 @@ import { TableComponent } from './table/table.component';
 import { BioComponent } from './bio/bio.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { PartnersComponent } from './partners/partners.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
-  declarations: [CollectionHomeComponent, TableComponent, BioComponent, CompaniesComponent, PartnersComponent],
+  declarations: [CollectionHomeComponent, TableComponent, BioComponent, CompaniesComponent, PartnersComponent, TabsComponent],
   imports: [CommonModule, CollectionsRoutingModule, SharedModule],
   exports: [],
 })
