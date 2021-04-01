@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModshomeComponent implements OnInit {
   openModal = false;
+  ageModalOpen = false;
   modalToggle() {
     this.openModal = !this.openModal;
+  }
+  agemodalToggle() {
+    this.ageModalOpen = !this.ageModalOpen;
   }
   constructor() {}
 

@@ -1,0 +1,22 @@
+<div class="ui dimmer visible active" (click)="onAgeModalClose()">
+  <div class="ui modal visible active" (click)="$event.stopPropagation()">
+    <i class="close icon" (click)="onAgeModalClose()"></i>
+    <div class="header">Profile Picture</div>
+    <div class="image content">
+      <div class="description">
+        <div class="ui header">We've auto-chosen a profile image for you.</div>
+        <p>Is it okay to use this photo?</p>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="ui black deny button" (click)="onAgeModalClose()">Nope</div>
+      <div
+        class="ui positive right labeled icon button"
+        (click)="onAgeModalClose()"
+      >
+        Yep, that's me
+        <i class="checkmark icon"></i>
+      </div>
+    </div>
+  </div>
+</div>
