@@ -1,0 +1,3 @@
+<app-divider heading="Mods Modal Component"></app-divider>
+<button (click)="modalToggle()">Open Modal</button>
+<app-modal *ngIf="openModal" (closeModal)="modalToggle()"></app-modal>
