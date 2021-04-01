@@ -1,3 +1,9 @@
 <app-divider heading="Mods Modal Component"></app-divider>
 <button (click)="modalToggle()">Open Modal</button>
 <app-modal *ngIf="openModal" (closeModal)="modalToggle()"></app-modal>
+<app-divider heading="Age Modal Component"></app-divider>
+<button (click)="agemodalToggle()">Age Open Modal</button>
+<app-agemodal
+  *ngIf="ageModalOpen"
+  (closeAgeModal)="agemodalToggle()"
+></app-agemodal>
